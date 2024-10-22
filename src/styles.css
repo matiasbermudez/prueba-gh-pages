@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Odibee Sans", sans-serif;
+    background-color: white;
+    background-image: url("./imgs/background.png");
+    background-repeat: repeat;
+    background-size: 20%;
+    display: grid;
+    place-content: center;
+    
+}
+.contenedor__principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#root{
+    display: grid;
+    place-content: center;
+    
+}
+.welcome__contenedor-ppt{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-left: 30px;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+.welcome__contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+}
+.welcome__titulo{
+    color : #009048;
+    font-weight:  700;
+    font-size: 60px;
+    line-height: 88%;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    letter-spacing: 8px;
+}
+.welcome__titulo h2:nth-child(2)::after{
+    content: 'ó';
+    position: absolute;
+    transform: translate(-100%, 0);
+    color:#407247;
+}
+.welcome__boton{
+   
+   width: 320px;
+   height: 87px;
+   background-color: #006CFC;
+   border: solid 6px #001997;
+   border-radius: 6px;
+   color: white;
+   font-size: 45px;
+   font-weight: 400;
+   font-family: "Odibee Sans";
+   letter-spacing: 4px;
+   margin-top: 20px;
+}
+/*EXPLICACION CSS */
+.explicacion__contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    gap: 50px;
+}
+.explicacion__texto{
+    color : black;
+    font-weight:  600;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    letter-spacing: 8px;
+}
+/*RESULTADOS*/
+.resultado__contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.article__resultado{
+    margin-top: 20px;
+    width: 259px;
+    height: 217px;
+    border: solid 5px black;
+    border-radius: 10px;
+    
+}
+.article__perdiste{
+    background-color: #DC5B49;
+}
+.article__ganaste{
+    background-color: #6CB46C;
+}
+.article__score{
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 61px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.article__vos , .article__maquina{
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: right;
+    margin-right: 20px;
+}
+.article__empate{
+    background-color: #0079AD;
+}
+
+/*JUGAR CSS*/
+.countdown-circle {
+    margin-top: 150px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border : 20px solid ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200px;
+    
+}
+/*JUGADA*/
+.contenedor__jugada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+.jugador__play-jugada{
+    position: absolute;
+    bottom: 0;
+}
+/*SELECCION DE BOTON */
+.SelectedOff {
+    transform: scale(0.5); 
+    opacity: 0.5; 
+    pointer-events: none; 
+    cursor: not-allowed; 
+}
+.jugador__play{
+    transform: scale(1.5);
+    margin-bottom: 65px;
+    pointer-events: none; 
+    cursor: not-allowed; 
+}
+.botonOff{
+    display: none;
+}
+.contenedor__botones-evento{
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    bottom: 0;
+}
+.jugador__play-jugada{
+    transform: scale(2);
+    margin-bottom: 85px;
+    pointer-events: none; 
+    cursor: not-allowed; 
+}
+/*HISTORIAL*/
+.contenedor__historial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tabla{
+    background-color: rgba(160, 159, 159, 0.7);
+    
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 30px;
+    border-collapse: collapse;
+    border: 3px solid purple;
+}
+.tabla__tr{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 5px;
+    margin: 0 30px 0 30px;
+    
+}
+.boton__borrar{
+    width: 320px;
+    height: 87px;
+    background-color: #ff0404;
+    border: solid 6px #4d0606;
+    border-radius: 6px;
+    color: white;
+    font-size: 45px;
+    font-weight: 400;
+    font-family: "Odibee Sans";
+    letter-spacing: 4px;
+    margin-top: 20px;
+}
+.contenedor__historial-botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

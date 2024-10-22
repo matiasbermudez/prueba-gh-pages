@@ -1,0 +1,15 @@
+{
+  "name": "desafio-ppt",
+  "source": "./src/index.html",
+  "homepage": "https://matiasbermudez.github.io/gh-pages-prueba-20-desafio",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build  ./src/index.html --dist-dir build --public-url ./",
+    "deploy" : "gh-pages -d build",
+    "build-and-deploy" : "npm run build && npm run deploy"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0",
+    "parcel": "^2.12.0"
+  }
+}
